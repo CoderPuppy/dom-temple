@@ -1,5 +1,5 @@
 # DOM Temple
-#### Templating for the DOM
+#### Extensible templating for the DOM
 
 Like jade but very very very customizable
 
