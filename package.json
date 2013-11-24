@@ -1,0 +1,24 @@
+{
+	"name"   : "dom-tmpl",
+	"version": "0.0.0",
+	"author" : "CoderPuppy",
+
+	"description": "Templating for the dom",
+
+	"dependencies": {
+		"domready": "*"
+	},
+
+	"devDependencies": {
+		"coffee-script": "*",
+		"browserify"   : "*",
+		"watchify"     : "*",
+		"nodemon"      : "*"
+	},
+
+	"scripts": {
+		"build-js": "coffee -c -o lib src && browserify lib/test-client.js -o bundle.js -d",
+		"watch-js": "coffee -cw -o lib src & watchify lib/test-client.js -o bundle.js -d",
+		"watch-npm": "nodemon -e json `which npm` install"
+	}
+}
