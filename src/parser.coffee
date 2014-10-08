@@ -28,7 +28,7 @@ class Parser extends P.BaseParser
 
 		# Tag Mode
 		@A(@T(-> @mode == 'tag'), @O(
-			# @R(/^\(/).then(->
+			# @S('(').then(->
 			# 	@_enterMode 'args'
 			# ),
 
